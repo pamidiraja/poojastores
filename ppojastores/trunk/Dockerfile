@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . .
 
 # Install project dependencies
-RUN dotnet install express stripe dotenv
+RUN dotnet add package Microsoft.EntityFrameworkCore
 
 # Expose the port that your Node.js app will listen on (adjust this as needed)
 EXPOSE 4000
